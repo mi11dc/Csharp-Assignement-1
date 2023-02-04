@@ -9,7 +9,12 @@ namespace HTTP5112_Csharp_Assignment_1.Controllers
 {
     public class HostingCostController : ApiController
     {
-        // GET api/HostingCost/id
+        /// <summary>
+        /// API contains some operations to convert days which is passed in parameter id in route "api/HostingCost/id" to FortNight(FT) to calculate hosting cost.
+        /// GET api/HostingCost/id
+        /// </summary>
+        /// <param name="id">any numeric value</param>
+        /// <returns>three strings which contains all info about number of FortNights, price for 1 FortNight, After calculating HST with price and total price.</returns>
         public IEnumerable<string> Get(double id)
         {
             // Convert no of days into fortnights where 1 fortnight = 14 days
